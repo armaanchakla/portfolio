@@ -37,14 +37,17 @@ const Projects = ({ theme, isHome }) => {
           >
             <Link
               to="/project"
-              className={`inline-flex items-center justify-center px-4 py-2 text-sm font-medium border rounded-full transition hover:scale-105 ${
-                theme === "light"
-                  ? "border-black/20 text-black/80 hover:bg-black/5"
-                  : "border-white/20 text-white/80 hover:bg-white/10"
-              }`}
+              className={`inline-flex items-center justify-center 
+        px-3 py-1.5 text-xs 
+        sm:px-4 sm:py-2 sm:text-sm 
+        font-medium border rounded-full transition hover:scale-105 ${
+          theme === "light"
+            ? "border-black/20 text-black/80 hover:bg-black/5"
+            : "border-white/20 text-white/80 hover:bg-white/10"
+        }`}
             >
               View All
-              <FaArrowRight className="ml-2" />
+              <FaArrowRight className="ml-1 sm:ml-2 text-xs sm:text-sm" />
             </Link>
           </motion.div>
         )}

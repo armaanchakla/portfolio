@@ -80,7 +80,7 @@ const Form = ({ theme }) => {
 
         <button
           type="submit"
-          className="w-full sm:w-auto py-2 rounded-lg bg-linear-to-r from-pink-500 via-purple-500 to-indigo-500 text-white font-medium hover:scale-[1.02] transition"
+          className="w-full sm:w-auto px-3 py-1.5 text-xs sm:px-4 sm:py-2 sm:text-sm rounded-lg bg-linear-to-r from-pink-500 via-purple-500 to-indigo-500 text-white font-medium hover:scale-[1.02] transition"
         >
           Send Message 🚀
         </button>
