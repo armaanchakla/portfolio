@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+body {
+  font-family: "Fira Code", monospace;
+}
+
+/* SCROLL */
+/* Smooth scrolling */
+.custom-scroll {
+  scroll-behavior: smooth;
+
+  /* Firefox styling */
+  scrollbar-width: thin;
+  scrollbar-color: #8c7b61 transparent;
+}
+
+/* Webkit scrollbar */
+.custom-scroll::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Remove scrollbar buttons (arrows) */
+.custom-scroll::-webkit-scrollbar-button {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+/* Track */
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Thumb */
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #bfae8f, #8c7b61);
+  border-radius: 999px;
+  border: 2px solid #e8dcc6;
+}
+
+/* Hover effect */
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #a89678, #6f614c);
+}
+
+/* BACKGROUND */
+.animated-gradient {
+  background: linear-gradient(-45deg,
+    #0f0f0f,
+    #1b1b2f,
+    #16213e,
+    #2c3e50,
+    #3a1c71,
+    #d76d77,
+    #ffaf7b
+  );
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
