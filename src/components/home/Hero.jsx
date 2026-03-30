@@ -59,8 +59,8 @@ const Hero = ({ theme }) => {
         className="flex gap-3 mt-4"
       >
         <a
-          download="Armaan-Resume.pdf"
-          href="/files/Armaan-Resume.pdf"
+          download="Armaan Resume.pdf"
+          href="/files/Armaan Resume.pdf"
           className="px-4 py-2 rounded-full text-sm font-medium 
             bg-linear-to-r from-pink-500 via-purple-500 to-indigo-500 text-white shadow-md hover:scale-105 transition"
         >

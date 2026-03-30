@@ -46,8 +46,8 @@ body {
 /* BACKGROUND */
 .animated-gradient {
   background: linear-gradient(-45deg,
-    #0f0f0f,
-    #1b1b2f,
+    /* #0f0f0f,
+    #1b1b2f, */
     #16213e,
     #2c3e50,
     #3a1c71,

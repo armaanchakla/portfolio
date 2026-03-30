@@ -80,7 +80,7 @@ export default function App() {
         <div
           className={`h-full shadow-2xl rounded-2xl border overflow-hidden relative transition-all duration-500 ${
             theme === "light"
-              ? "bg-white/10 backdrop-blur-md border-white/40"
+              ? "bg-white/5 backdrop-blur-2xl border-white/20 shadow-[0_8px_30px_rgb(0,0,0,0.08)]"
               : "bg-black/30 backdrop-blur-md border-white/10"
           }`}
         >
@@ -94,13 +94,13 @@ export default function App() {
             <ThemeToggle theme={theme} setTheme={setTheme} />
           </div>
 
-          {/* LEFT HALF-CIRCLE MENU */}
+          {/* LEFT MENU */}
           <SideMenu theme={theme} />
 
           {/* pages */}
           <div
             ref={scrollRef}
-            className={`h-full overflow-y-auto custom-scroll pt-10 px-20 transition-all duration-300 ${
+            className={`h-full overflow-y-auto custom-scroll pt-10 pl-16 pr-5 sm:px-16 md:px-20 transition-all duration-300 ${
               theme === "light" ? "text-black" : "text-white/90"
             } `}
           >

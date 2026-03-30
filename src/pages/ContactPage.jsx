@@ -6,7 +6,7 @@ const ContactPage = ({ theme }) => {
     <>
       {/* top bottom margin */}
       <div className="mt-10 md:mt-14 lg:mt-16 mb-10">
-        <section className="flex items-center justify-center min-h-[60vh] sm:min-h-[70vh] px-4 sm:px-6">
+        <section className="flex items-center justify-center min-h-[60vh] sm:min-h-[70vh] px-0 sm:px-6">
           <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
             <Info theme={theme} />
 

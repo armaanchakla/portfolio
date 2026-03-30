@@ -11,8 +11,9 @@ export default function SideMenu({ theme }) {
     { path: "/contact", icon: <FaEnvelope />, label: "Contact" },
   ];
 
-  const basePositions = [-60, 0, 60];
-  const pushDown = 35; // spacing shift for items below hovered
+  const isMobile = window.innerWidth < 640;
+  const basePositions = isMobile ? [-50, 0, 50] : [-60, 0, 60];
+  const pushDown = isMobile ? 20 : 35; // spacing shift for items below hovered
 
   return (
     <div className="absolute left-0 top-1/2 -translate-y-1/2 z-40">

@@ -49,7 +49,10 @@ const Skills = ({ theme }) => {
             key={skill}
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ delay: i * 0.1 }}
+            transition={{
+              delay: i * 0.01,
+              duration: 0.2,
+            }}
             viewport={{ once: true }}
             className={`text-xs sm:text-sm md:text-sm px-2 sm:px-3 md:px-3 py-0.5 sm:py-1 md:py-1 rounded-full shadow-md hover:scale-105 transition bg-linear-to-r ${getSkillColor()} ${
               theme === "light"

@@ -7,14 +7,10 @@ import { useState } from "react";
 const Projects = ({ theme, isHome }) => {
   const [expanded, setExpanded] = useState({});
 
-  const HomeInfo = portfolioData.Home;
+  const ProjectInfo = portfolioData.projects;
 
-  const ProjectInfo = [...portfolioData.projects].sort(
-    (a, b) => a.order - b.order,
-  );
-
-  const displayedProjects = isHome ? ProjectInfo.slice(0, 3) : ProjectInfo;
-
+  const ProjectList = [...ProjectInfo].sort((a, b) => a.order - b.order);
+  const displayedProjects = isHome ? ProjectList.slice(0, 3) : ProjectList;
   const charLenght = 80;
 
   const toggleReadMore = (id) => {
@@ -22,7 +18,7 @@ const Projects = ({ theme, isHome }) => {
   };
 
   return (
-    <section className="flex flex-col gap-4">
+    <section className="flex flex-col gap-1 sm:gap-4">
       {/* Header */}
       <div className="flex items-center justify-between">
         <h2 className="text-lg md:text-xl font-semibold">
@@ -31,20 +27,18 @@ const Projects = ({ theme, isHome }) => {
 
         {isHome && (
           <motion.div
+            className="hidden sm:block" // hide on mobile
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
           >
             <Link
               to="/project"
-              className={`inline-flex items-center justify-center 
-        px-3 py-1.5 text-xs 
-        sm:px-4 sm:py-2 sm:text-sm 
-        font-medium border rounded-full transition hover:scale-105 ${
-          theme === "light"
-            ? "border-black/20 text-black/80 hover:bg-black/5"
-            : "border-white/20 text-white/80 hover:bg-white/10"
-        }`}
+              className={`inline-flex items-center justify-center px-3 py-1.5 text-xs sm:px-4 sm:py-2 sm:text-sm font-medium border rounded-full transition hover:scale-105 ${
+                theme === "light"
+                  ? "border-black/20 text-black/80 hover:bg-black/5"
+                  : "border-white/20 text-white/80 hover:bg-white/10"
+              }`}
             >
               View All
               <FaArrowRight className="ml-1 sm:ml-2 text-xs sm:text-sm" />
@@ -145,6 +139,23 @@ const Projects = ({ theme, isHome }) => {
           </motion.div>
         ))}
       </div>
+
+      {/* View All for Mobile Display */}
+      {isHome && (
+        <div className="flex justify-center sm:hidden">
+          <Link
+            to="/project"
+            className={`inline-flex items-center justify-center px-3 py-1.5 text-xs font-medium border rounded-full transition hover:scale-105 ${
+              theme === "light"
+                ? "border-black/20 text-black/80 hover:bg-black/5"
+                : "border-white/20 text-white/80 hover:bg-white/10"
+            }`}
+          >
+            View All
+            <FaArrowRight className="ml-1 text-xs" />
+          </Link>
+        </div>
+      )}
     </section>
   );
 };
