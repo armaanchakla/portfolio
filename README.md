@@ -1,6 +1,6 @@
-<h1 align="center">Armaan Portfolio Website 🚀</h1>
+<h1 align="left">Armaan Portfolio Website 🚀</h1>
 
-<p align="center">
+<p align="left">
 A modern, responsive personal portfolio built with <b>React</b>, <b>Tailwind CSS</b>, and <b>Framer Motion</b>. It features smooth animations, a glassmorphism UI, theme switching, and a contact form with toast notifications.
 </p>
 
@@ -77,8 +77,6 @@ npm run dev
 http://localhost:5173
 ```
 
-<br>
-
 ## 📦 Build for Production
 ```bash
 npm run build
@@ -91,15 +89,12 @@ npm run preview
 
 ## 🧩 Key Components
 
-- Navbar → Top navigation + theme toggle
+- Navbar → Left navigation + theme toggle
 - SideMenu → Animated floating navigation
 - Info → Personal info section
 - Form → Contact form with toast feedback
 - Pages → Home, Projects, Contact
 
-<br>
-
-```md
 ## 🌟 Future Improvements
 - 🔗 Backend integration for contact form (Node.js / Express)
 - 📊 Project filtering with animations
@@ -107,7 +102,6 @@ npm run preview
 - 🚀 SEO + Lighthouse performance optimization
 - 🖼️ Image lazy loading + WebP optimization
 - ⚡ Performance tuning (code splitting, caching)
-```
 
 ## 🙌 Acknowledgements
 - Inspired by modern UI/UX trends

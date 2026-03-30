@@ -8,7 +8,7 @@ const HomePage = ({ theme }) => {
     <>
       {/* top bottom margin */}
       <div className="mt-10 md:mt-14 lg:mt-16 mb-10">
-        <div className="w-full min-h-full flex flex-col gap-10 md:gap-16">
+        <div className="w-full min-h-full flex flex-col gap-6 md:gap-8">
           <Hero theme={theme} />
           <Skills theme={theme} />
           <Projects theme={theme} isHome={true} />

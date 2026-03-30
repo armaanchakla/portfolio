@@ -101,7 +101,7 @@ export default function App() {
           <div
             ref={scrollRef}
             className={`h-full overflow-y-auto custom-scroll pt-10 px-20 transition-all duration-300 ${
-              theme === "light" ? "text-black/90" : "text-white/90"
+              theme === "light" ? "text-black" : "text-white/90"
             } `}
           >
             <ScrollToTop scrollRef={scrollRef} /> {/* auto scroll top */}

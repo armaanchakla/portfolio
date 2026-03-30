@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { portfolioData } from "../../configs/data";
 
 const Info = ({ theme }) => {
-  const ContactInfo = portfolioData.Contact;
+  const ContactInfo = portfolioData.contact;
 
   return (
     <>
