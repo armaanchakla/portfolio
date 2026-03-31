@@ -50,7 +50,7 @@ export default function SideMenu({ theme }) {
                       {link.icon}
                     </span>
 
-                    {/* DESKTOP LABEL */}
+                    {/* label */}
                     <span
                       /* hidden sm:block */
                       className={`absolute left-1/2 -translate-x-1/2 z-50 text-[10px] whitespace-nowrap pointer-events-none transition-all duration-300 font-extrabold ${

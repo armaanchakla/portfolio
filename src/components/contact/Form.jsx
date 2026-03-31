@@ -24,11 +24,17 @@ const Form = ({ theme }) => {
       return;
     }
 
+    if (message.length < 5 || message.length > 80) {
+      toast.error("Message must be between 5 and 80 characters. ⚠️");
+      return;
+    }
+
     if (!email.includes("@")) {
       toast.error("Enter a valid email 📧");
       return;
     }
 
+    // success
     toast.success("Message sent successfully 🚀");
 
     setForm({
